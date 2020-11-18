@@ -1,3 +1,6 @@
+packages/*
+
+
 # Logs
 logs
 *.log

@@ -1,0 +1,28 @@
+{
+	"private": true,
+	"workspaces": {
+		"packages": [
+			"packages/lib/common",
+			"packages/lib/core",
+			"packages/lib/base-ui",
+			"packages/lib/flexui",
+			"packages/flexapp"
+		]
+	},
+	"name": "flexure",
+	"version": "2.0.0-rc.58",
+	"description": "",
+	"scripts": {
+		"bootstrap": "lerna bootstrap --hoist",
+		"build": "cd packages/docs && rm -rf .docz/.cache && yarn run build",
+		"build:lib": "lerna run build --scope={@flexure/common,@flexure/core,@flexure/base-ui,@flexure/flexui}",
+		"dev": "cd packages/docs && rm -rf .docz/.cache && yarn run dev",
+		"serve": "cd packages/docs && yarn run serve"
+	},
+	"keywords": [],
+	"author": "Ronald Manzano",
+	"license": "ISC",
+	"devDependencies": {
+		"lerna": "^3.16.4"
+	}
+}

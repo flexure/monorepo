@@ -1,0 +1,13 @@
+{
+	"lerna": "3.16.4",
+	"packages": [
+		"packages/lib/common",
+		"packages/lib/core",
+		"packages/lib/base-ui",
+		"packages/lib/flexui",
+		"packages/flexapp"
+	],
+	"version": "1.0.0",
+	"npmClient": "yarn",
+	"useWorkspaces": true
+}
